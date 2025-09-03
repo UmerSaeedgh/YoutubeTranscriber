@@ -30,3 +30,13 @@ def get_captions(url: HttpUrl = Query(..., description="Youtube URL")):
         "count": len(data),
         "captions": data,
     }
+
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],  # during dev; restrict precisely
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
