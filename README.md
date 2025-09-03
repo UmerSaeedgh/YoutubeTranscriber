@@ -1,4 +1,4 @@
-# YouTube Transcript API (FastAPI Wrapper)
+# YouTube Transcriber API (FastAPI Wrapper)
 
 This project provides a simple **FastAPI service** that fetches **YouTube captions (subtitles)** using [`youtube-transcript-api`](https://pypi.org/project/youtube-transcript-api/).  
 
